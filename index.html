@@ -21,66 +21,63 @@
 	<div id="content">
 		<div id="code">
 			<span class="comments">##</span><br/>
-			<span class="comments"># I am a programmer</span><br/>
-			<span class="comments"># so I write code to celebrate Valentine's Day in coder's way.</span><br/>
+			<span class="comments"># 我的小宝贝在吗？</span><br/>
+			<span class="comments"># 没想到我们在一起后的第一个情人节就这么特别</span><br/>
+			<span class="comments"># 那就送你一个特别的小故事吧，它来喽！</span><br/>
 			<span class="comments">##</span><br/>
-			i = Boy(<span class="string">"Qingcai Cui"</span>);<br/>
-			u = Girl(<span class="string">"Qian Ma"</span>);<br/>
-			<span class="comments"># Oct 14, 2018, I meet you because of PyCon 2018. </span><br/>
-			i.meet(u)<br/>
-			<span class="comments"># Afterwards, I confessed to you. </span><br/>
-			i.confess(u)<br/>
-			<span class="comments"># Nov 5, 2018, You became my girlfriend.</span><br/>
-			u.accepted(i)<br/>
-			<span class="comments"># Since then, we spent harmony happiness life every day.</span><br/>
-			happy(u, i)<br/>
-			<span class="comments"># We enjoy studying together.</span><br/>
-			study(u, i)<br/>
-			<span class="comments"># We enjoy cuisine together.</span><br/>
-			dine(u, i)<br/>
-			<span class="comments"># We enjoy appointment together.</span><br/>
-			appoint(u, i)<br/>
-			<span class="comments"># We enjoy vacation together.</span><br/>
-			vacation(u, i)<br/>
-			<span class="comments"># Sometimes there are a few conflicts between us.</span><br/>
-			conflict(u, i, sometimes=<span class="keyword">True</span>)<br/>
-			<span class="comments"># But we are getting more and more in harmony together.</span><br/>
-			u.in_harmony_with(i) <br/>
-			i.in_harmony_with(u) <br/>
-			<span class="comments"># You are the greatest love of my life.</span><br/>
-			while <span class="keyword">True</span>:<br/>
-			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>u = everything<br/>
+			<span class="comments"># 我们先创建两个对象</span><br/>
+			Mr = Boy(<span class="string">"B.X. Shen"</span>, date = 1996-10-09);<br/>
+			Miss = Girl(<span class="string">"W.W. Yu"</span>, date = 1997-04-09);<br/>
+			<span class="comments"># 在19年8月25号，他们在微信上第一次认识，是Miss先打的招呼哦</span><br/>
+			Miss.know(Mr, said = ‘Hello’, site = ‘Wechat’)<br/>
+			<span class="comments"># 之后似乎聊得还不错，在19年9月11号，他们见面了(Miss真可爱) </span><br/>
+			Mr.meet(Miss, mood = happy)<br/>
+			<span class="comments"># Mr很喜欢Miss，见面最后的小插曲也让Mr很心疼，他摊牌了(嘻嘻)</span><br/>
+			Mr.fell_in_love(Miss, mood = anxious & excited)<br/>
+			<span class="comments"># 最终在19年9月15日，他们升华了友谊</span><br/>
+			Miss.accepted(Mr)<br/>
+			<span class="comments"># 从此开始了异地恋之旅</span><br/>
+			Couple(Mr, Miss, relationship = long-distance)<br/>
+			<span class="comments"># 相互想念让人痛苦，不过幸运的是Mr几乎每个月都可以去看望Miss几天</span><br/>
+			<span class="placeholder"></span><span class="keyword">if</span> Mr.see(Miss, frequency = 1/month):<br/>
+			<span class="placeholder"></span><span class="placeholder"></span> Mr.with(Miss, mood = happy)<br/>
 			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>everything = u<br/>
-			<span class="comments"># Waiting me marries you, we will be the happiest couple in the world</span><br/>
-			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
-			i.live_happily_forever_with(u)<br/>
-			<span class="comments"># I love you forever.</span><br/>
+			<span class="placeholder"></span><span class="placeholder"></span>Mr.mood = sad<br/>
+			<span class="comments"># 他们一起出去玩</span><br/>
+			Play(Mr, Miss)<br/>
+			<span class="comments"># 一起吃好吃的</span><br/>
+			Cuisine(Mr, Miss)<br/>
+			<span class="comments"># 一起体验？？？</span><br/>
+			Experience(Mr, Miss, hand = <span class="keyword">True</span>, hug = <span class="keyword">True</span>, kiss = <span class="keyword">True</span>, mood = warm && happy)<br/>
+			<span class="comments"># 中间也会有一些感动，当然，也有一些不开心</span><br/>
+			Progress(Mr, Miss, moved = sometimes, conflicts = sometimes)<br/>
+			<span class="comments"># 但是最后还是能一起愉快的玩耍(哈哈)</span><br/>
+			Delight_together(Mr, Miss, conflicts = MM.close)<br/>
+			<span class="comments"># 遇见喜欢的人多不容易啊，真希望Mr和Miss永远在一起(嘿嘿)</span><br/>
+			Mr.live_together_with(Miss, time = forever, hope = <span class="keyword">True</span>)<br/>
+			<span class="comments"># 我永远爱你，宝贝</span><br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					Qian, I have fallen in love with you for
+					小宝贝，我们已经一起走过了
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					Love u forever and ever.<br/>
-					<div class="signature">- Qingcai Cui | Germey</div>
+					希望这趟旅程没有终点！<br/>
+					<div class="signature">- <a href="http://love.zxgnz.com/html/20200212/15814921397613.html#xc">爱你的潇潇大哥哥</a></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="copyright">
-		Copyright © 2020 <a href='http://cuiqingcai.com'>cuiqingcai.com</a> 2014-2020
-	</div>
+
 </div>
 <script type="text/javascript">
 	var offsetX = $("#loveHeart").width() / 2;
 	var offsetY = $("#loveHeart").height() / 2 - 55;
 	var together = new Date();
-	together.setFullYear(2019, 9, 15);
+	together.setFullYear(2019, 8, 15);
 	together.setHours(10);
 	together.setMinutes(30);
 	together.setSeconds(0);
